@@ -19,7 +19,7 @@ class LinkedList:
 	def Print(self):
 		node=self.head
 		if node==None:
-			print("linked-list in empty")
+			print("linked-list is empty")
 		else:
 			while node.next!=None:
 				print(node.value.value,'-->',end=' ')
@@ -108,14 +108,14 @@ class LinkedList:
 			current=current.next
 		if current.next==None:
 			print("invalid operation")
-			return 
+			return
 		else:
 			DeletedNode=current.next
 			current.next=DeletedNode.next
 			return DeletedNode
 
 
-			
+
 
 
 
